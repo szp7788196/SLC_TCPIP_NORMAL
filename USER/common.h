@@ -70,7 +70,7 @@
 
 #define MAX_UPLOAD_INVL				65535
 
-#define INIT_LIGHT_LEVEL			100
+#define INIT_LIGHT_LEVEL			LightLevelPercent
 
 #define TYPE_WEEKDAY				0x01
 #define TYPE_WEEKEND				0x02
