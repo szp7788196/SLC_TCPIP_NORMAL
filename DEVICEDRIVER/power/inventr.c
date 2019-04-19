@@ -2,7 +2,7 @@
 #include "common.h"
 #include "usart.h"
 #include "pwm.h"
-#include "mcp4725.h"
+#include "dac.h"
 #include "cd4051b.h"
 
 u8 InventrBusy = 0;
@@ -483,7 +483,7 @@ void SetLightLevel(u8 intfc_type, u8 level)
 	switch(intfc_type)
 	{
 		case INTFC_0_10V:
-			Mcp4725SetOutPutVoltage(((float)level / 200.0f) * 5.0f);
+			Dac1SetOutPutVoltage(((float)level / 200.0f) * (float)DAC_MAX_VOLATGE);
 		break;
 
 		case INTFC_PWM:

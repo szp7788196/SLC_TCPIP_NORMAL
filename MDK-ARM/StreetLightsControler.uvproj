@@ -297,7 +297,7 @@
               </OCR_RVCT3>
               <OCR_RVCT4>
                 <Type>1</Type>
-                <StartAddress>0x8000000</StartAddress>
+                <StartAddress>0x8008000</StartAddress>
                 <Size>0x1c000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
@@ -335,7 +335,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>3</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -351,7 +351,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\DEVICEDRIVER;..\FREERTOS\inc;..\MEMORY;..\JSON;..\FWLIB\inc;..\PROTOCOL;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\PERIPHERAL\iic1;..\DEVICEDRIVER\24cxx;..\DEVICEDRIVER\sht2x;..\DEVICEDRIVER\bh1750;..\PERIPHERAL\iic2;..\DEVICEDRIVER\led;..\PERIPHERAL\rtc;..\PERIPHERAL\usart;..\DEVICEDRIVER\bg96;..\PLATFORMS;..\DEVICEDRIVER\power;..\DEVICEDRIVER\bcxx;..\DEVICEDRIVER\att7059x;..\DEVICEDRIVER\cd4015b;..\DEVICEDRIVER\dali;..\DEVICEDRIVER\mcp4725;..\DEVICEDRIVER\pwm</IncludePath>
+              <IncludePath>..\CORE;..\DEVICEDRIVER;..\FREERTOS\inc;..\MEMORY;..\JSON;..\FWLIB\inc;..\PROTOCOL;..\SYSTEM\delay;..\SYSTEM\sys;..\USER;..\PERIPHERAL\iic1;..\DEVICEDRIVER\24cxx;..\DEVICEDRIVER\sht2x;..\DEVICEDRIVER\bh1750;..\PERIPHERAL\iic2;..\DEVICEDRIVER\led;..\PERIPHERAL\rtc;..\PERIPHERAL\usart;..\DEVICEDRIVER\bg96;..\PLATFORMS;..\DEVICEDRIVER\power;..\DEVICEDRIVER\bcxx;..\DEVICEDRIVER\att7059x;..\DEVICEDRIVER\cd4015b;..\DEVICEDRIVER\dali;..\PERIPHERAL\dac;..\DEVICEDRIVER\pwm</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -502,6 +502,11 @@
               <FileType>1</FileType>
               <FilePath>..\PERIPHERAL\usart\usart2.c</FilePath>
             </File>
+            <File>
+              <FileName>dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\PERIPHERAL\dac\dac.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -546,11 +551,6 @@
               <FileName>pwm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\DEVICEDRIVER\pwm\pwm.c</FilePath>
-            </File>
-            <File>
-              <FileName>mcp4725.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\DEVICEDRIVER\mcp4725\mcp4725.c</FilePath>
             </File>
             <File>
               <FileName>dali.c</FileName>

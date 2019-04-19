@@ -564,8 +564,10 @@ void TIM2_IRQHandler(void)
 
 		SysTick10msAdder();			//10ms滴答计数器累加
 
-		Usart1ReciveFrameEnd();		//检测USART1是否接收数据结束
- 		Usart4ReciveFrameEnd();		//检测UART1是否接收数据结束
+		Usart1ReciveFrameEnd();
+		Usart3ReciveFrameEnd();
+		Usart4ReciveFrameEnd();
+		Usart5ReciveFrameEnd();
 
 		tick_10ms ++;
 		if(tick_10ms >= 10)
